@@ -1,0 +1,11 @@
+{
+    "elements": {},
+    "attributes": {
+        "width:": {
+            "context": "div"
+        },
+        "http-equiv": {
+            "context": "meta"
+        }
+    }
+}

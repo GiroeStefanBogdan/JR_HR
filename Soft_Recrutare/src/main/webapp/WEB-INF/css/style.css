@@ -1,0 +1,180 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 14, 2021, 5:10:29 PM
+    Author     : COMPAQ
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+body {
+    background-image: url(1.jpg);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+h1 {
+    color: rgb(243, 240, 240);
+    text-align: center;
+    align-content: center;
+    padding-top: 25%;
+    font-size: 33px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    animation: jump 2s;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: rgb(185, 169, 169);
+    text-align: center;
+    align-content: center;
+    padding-top: 17%;
+    font-size: 30px;
+    font-weight: 550;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: center;
+    align-items: center;
+}
+
+input[type=text],
+.form-control {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button,
+.btn-secondary {
+    color: rgb(112, 109, 109);
+    text-align: center;
+    align-content: center;
+    margin-top: 5px;
+    width: 7%;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+label {
+    color: #ccc;
+    text-align: center;
+    align-content: center;
+    margin-top: 5px;
+    width: 10%;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+p,
+a {
+    color: #ccc;
+    padding-top: 10px;
+    font-size: 20px;
+    position: unset;
+}
+
+a,
+ul {
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 13%;
+}
+
+@keyframes jump {
+    0% {
+        padding-top: 200px;
+    }
+
+    100% {
+        transform: rotateY(360deg);
+        text-transform: uppercase;
+        color: rgb(214, 181, 181);
+    }
+}
+
+@media only screen and (max-width:1400px) {
+    h1 {
+        padding-top: 30%;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    h1 {
+        padding-top: 35%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    h1 {
+        padding-top: 40%;
+    }
+}
+
+@media only screen and (max-width:796px) {
+    h1 {
+        padding-top: 45%;
+    }
+}
+
+@media only screen and (max-width:696px) {
+    h1 {
+        padding-top: 50%;
+    }
+}
+
+@media only screen and (max-width:596px) {
+    h1 {
+        padding-top: 65%;
+    }
+}
+
+@media only screen and (max-width:550) {
+    h1 {
+        padding-top: 80%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    h1 {
+        padding-top: 77%;
+    }
+}
+
+@media only screen and (max-width:476px) {
+    h1 {
+        padding-top: 75%;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    h1 {
+        padding-top: 85%;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    h1 {
+        padding-top: 90%;
+    }
+}
