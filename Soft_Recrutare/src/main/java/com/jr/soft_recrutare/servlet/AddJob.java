@@ -5,8 +5,11 @@
  */
 package com.jr.soft_recrutare.servlet;
 
+import com.soft.soft_recrutare.common.CandidateDetails;
+import com.soft.soft_recrutare.ejb.CandidateBean;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,9 +20,14 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Giroe Stefan Bogdan
  */
-@WebServlet(name = "Login", urlPatterns = {"/Login"})
-public class Login extends HttpServlet {
+@WebServlet(name = "AddJob", urlPatterns = {"/AddJob"})
+public class AddJob extends HttpServlet {
 
+    @Inject
+    CandidateBean CandidateBean;
+    
+    @Inject 
+    CandidateDetails CandidateDetails;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -37,10 +45,10 @@ public class Login extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Login</title>");            
+            out.println("<title>Servlet AddJob</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Login at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet AddJob at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -58,7 +66,11 @@ public class Login extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       request.getRequestDispatcher("/WEB-INF/pages/login.jsp").forward(request, response);
+        
+    //    List<CandidateDetails> candidate = CandidateBean.getAllUsers();
+     //  request.setAttribute("candidates", candidate);
+        
+      // request.getRequestDispatcher("/WEB-INF/addJob.jsp").forward(request, response);
     }
 
     /**
@@ -72,8 +84,7 @@ public class Login extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-                request.setAttribute("message", "Username or password incorrect");
-        request.getRequestDispatcher("/WEB-INF/pages/login.jsp").forward(request, response);
+        processRequest(request, response);
     }
 
     /**
@@ -83,7 +94,7 @@ public class Login extends HttpServlet {
      */
     @Override
     public String getServletInfo() {
-        return "Login";
+        return "Short description";
     }// </editor-fold>
 
 }
