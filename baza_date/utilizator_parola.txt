@@ -1,0 +1,2 @@
+utilizator: jt_hr
+parola: jt_hr
