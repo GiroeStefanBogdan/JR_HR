@@ -23,10 +23,10 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "AddJob", urlPatterns = {"/AddJob"})
 public class AddJob extends HttpServlet {
 
-    @Inject
+    //@Inject
     CandidateBean CandidateBean;
     
-    @Inject 
+    //@Inject 
     CandidateDetails CandidateDetails;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>

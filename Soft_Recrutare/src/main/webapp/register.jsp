@@ -16,7 +16,7 @@
                     <option value="+49">Germania</option>
                 </select> 
                 <%-- functie pentru input tel - schimba pattern in functie de tara - urmeaza a fi facut --%>
-                <input style="float: right; width: 75%;" type="tel" id="phone" name="phone" class="form-control" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+                <input style="float: right; width: 75%;" type="tel" id="phone" name="phone" class="form-control" placeholder="0123456789" pattern="[0-9]" required><br>
                 <br><br>
                 <label for="username" class="sr-only">Username</label> <!-- trebuie functie care sa il creeze automat, nu input -->
                 <input type="text" id="username" class="form-control" placeholder="username" required autofocus><br>

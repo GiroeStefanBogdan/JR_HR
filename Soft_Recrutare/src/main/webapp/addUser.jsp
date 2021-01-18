@@ -31,8 +31,8 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <label for="password">Email</label>
-                <input type="password" class="form-control" id="password" name="password" placeholder="" value="" required>
+                <label for="passw">PassWord</label>
+                <input type="password" class="form-control" id="passw" name="password" placeholder="" value="" required>
                 <div class="invalid-feedback">
                     Password is required.
                 </div>
