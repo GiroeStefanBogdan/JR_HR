@@ -1,6 +1,6 @@
 <%-- 
     Document   : users
-    Created on : Jan 14, 2021, 5:51:47 PM
+    Created on : Dec 17, 2020, 12:09:12 PM
     Author     : COMPAQ
 --%>
 
@@ -9,15 +9,13 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <t:pageTemplate pageTitle="Users">
-<h1>Users</h1>
+    <h1>Users</h1>
     <form method="POST" action="${pageContext.request.contextPath}/Users">
-   <%-- verif Admin
-        <c:if test="${pageContext.request.isUserInRole('Admin')}">
-   --%>
-         <a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/users.jsp/AddUser" role="button">Add User</a>
-    <%--
+    <c:if test="${pageContext.request.isUserInRole('AdminRole')}">
+        
+         <a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/Users/Create" role="button">Add User</a>
+         <button class="btn btn-secondary" type="submit">Invoice</button>
     </c:if>
-   --%>
          
     <c:forEach var="user" items="${users}" varStatus="status">
         <div class="row">
@@ -38,6 +36,5 @@
         </div>
     </c:forEach>
     </form>
-    
+   
 </t:pageTemplate>
-

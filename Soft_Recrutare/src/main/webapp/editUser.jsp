@@ -1,6 +1,6 @@
 <%-- 
     Document   : editUser
-    Created on : Jan 14, 2021, 7:13:11 PM
+    Created on : Dec 17, 2020, 12:27:37 PM
     Author     : COMPAQ
 --%>
 
@@ -14,13 +14,13 @@
         <div class="row">
             <div class="col-md-6">
                 <label for="nume">Nume</label>
-                <input type="text" class="form-control" id="nume" name="nume" placeholder="" value="To be modified" required>
+                <input type="text" class="form-control" id="nume" name="nume" placeholder="" value="${user.nume}" required>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
                 <label for="prenume">Prenume</label>
-                <input type="text" class="form-control" id="prenume" name="prenume" placeholder="" value="To be modified" required>
+                <input type="text" class="form-control" id="prenume" name="prenume" placeholder="" value="${user.prenume}" required>
             </div>
         </div>
                 <div class="row">
@@ -30,25 +30,25 @@
                     <option value="+0">Romania</option>
                     <option value="+49">Germania</option>
                 </select> 
-                <input style="float: right; width: 75%;" type="tel" class="form-control" id="phone" name="phone" placeholder="0123456789" pattern="[0-9]" value="0712345678" required>
+                <input style="float: right; width: 75%;" type="tel" class="form-control" id="phone" name="phone" placeholder="0123456789" pattern="[0-9]" value="${user.phone}" required>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
                 <label for="username">Username</label>
-                <input type="text" class="form-control" id="username" name="username" placeholder="" value="To be modified" required>
+                <input type="text" class="form-control" id="username" name="username" placeholder="" value="${user.username}" required>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="" value="To be modified" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="" value="${user.email}" required>
             </div>
         </div><!-- comment -->
         <div class="row">
             <div class="col-md-6">
-                <label for="passw">Password</label>
-                <input type="password" class="form-control" id="passw" name="passw" placeholder="" value="To be modified" required>
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="" value="${user.password}" required>
             </div>
         </div>
         <hr class="mb-4">

@@ -1,6 +1,6 @@
 <%-- 
     Document   : addUser
-    Created on : Jan 14, 2021, 6:16:11 PM
+    Created on : Dec 17, 2020, 12:15:10 PM
     Author     : COMPAQ
 --%>
 
@@ -10,7 +10,7 @@
 
 <t:pageTemplate pageTitle="AddUser">
     <h1>Add User</h1>
-    <form class="needs-validation" method="post" action="${pageContext.request.contextPath}/Users/AddUser">
+    <form class="needs-validation" method="post" action="${pageContext.request.contextPath}/Users/Create">
         <div class="row">
             <div class="col-md-6">
                 <label for="username">Username</label>
@@ -31,8 +31,8 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <label for="passw">PassWord</label>
-                <input type="password" class="form-control" id="passw" name="password" placeholder="" value="" required>
+                <label for="password">Email</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="" value="" required>
                 <div class="invalid-feedback">
                     Password is required.
                 </div>
@@ -58,3 +58,6 @@
             </div>
         </div>
     </form>
+  
+</t:pageTemplate>
+

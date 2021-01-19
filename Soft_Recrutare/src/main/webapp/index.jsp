@@ -3,4 +3,5 @@
 
 <t:pageTemplate pageTitle="JR_HR">
     <h1>Welcome!</h1>
+    <h3>Login or Register</h3> 
 </t:pageTemplate>
